@@ -1,0 +1,123 @@
+
+
+/* selectore en jerarquia*/
+*{
+  /* font-size: 20px;
+  letter-spacing: 10px; */
+}
+
+p{
+  color: green;
+  margin: 0;
+}
+
+.parrafo-rojo{
+  color: red;
+}
+
+#fondo-azul{
+  background: blue;
+  color: white;
+}
+
+/* combinadores de selectores*/
+div p{
+  color: violet;
+}
+
+div > p{
+  color: yellow;
+}
+
+p:hover + h1{
+  font-family: 'Rubik', sans-serif;
+  color: green;
+}
+
+p:hover ~ p{
+  color: black;
+}
+
+input:focus ~ label{
+  font-size: 10px;
+}
+
+/* propiedades de caja */
+.caja{
+  width: 200px;
+  height: 50px;
+  /* 
+  margin-top: 100px;
+  margin-right: 5px;
+  margin-bottom: 20px;
+  margin-left: 30px;
+
+  margin: 100px 5px 20px 30px;
+  */
+
+  /* 
+  margin-top: 100px;
+  margin-right: 30px;
+  margin-bottom: 100px;
+  margin-left: 30px; 
+
+  margin: 100px 30px;
+  */
+  padding: 10px;
+  /* border-width: 1px; */
+  /* border-color: black; */
+  border: 1px solid black;
+  background: red;
+  /* box-shadow: -50px 20px 30px 40px black; */
+  border-radius: 10px;
+}
+
+.caja2{
+  min-width: 200px;
+  max-width: 300px;
+  color: #333;
+  /* overflow: visible; */
+  /* overflow: hidden; */
+  overflow: scroll;
+  width: 40%;
+  height: 100px;
+  background: #ccc;
+}
+
+/* funciones */
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&family=Ysabeau+SC:wght@1&display=swap');
+
+h2{
+  font-family: 'Rubik', sans-serif;
+  width: calc(1vw / 10 * 100 );
+}
+
+/* colores */
+
+.colores{
+  width: 100px;
+  height: 100px;
+  /* background: red; */
+  /* background: rgb(150,200,0,0.5); */
+  /* background: #c31d1d; */
+  /* background: linear-gradient(90deg,#f00, #00f); */
+  /* background: radial-gradient(#f00, #00f 70%); */
+  background: conic-gradient(#f00, #0f0,#00f);
+}
+
+/* propieades de texto */
+h3{
+  height: 60px;
+  font-size: 40px;
+  text-align: justify;
+  text-decoration: underline;
+  letter-spacing: 5px;
+  /* word-spacing: 30px; */
+  line-height: 60px;
+  vertical-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+

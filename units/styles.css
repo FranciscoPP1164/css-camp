@@ -1,0 +1,55 @@
+/* unidades fijas */
+.px{
+  width: 100px;
+  height: 100px;
+  background: red;
+}
+
+.pt{
+  width: 100pt;
+  height: 100pt;
+  background: blue;
+}
+
+.cm{
+  width: 10cm;
+  height: 10cm;
+  background: yellow;
+}
+
+/* unidades relativas */
+.percent{
+  width: 50%;
+  height: 100px;
+  background: green;
+}
+
+body{
+  font-size: 30px;
+}
+
+.em{
+  
+  /* relativo al font-size que exista en la cascada dentro de la herencia*/
+  /* font-size: 10px; */
+  width: 2em;
+  height: 2em;
+  background: violet;
+}
+
+:root{
+  font-size: 40px;
+}
+
+.rem{
+  /* relativo al font-size del elemento raiz(:root) */
+  width: 2rem;
+  height: 2rem;
+  background: purple;
+}
+
+.vw-vh{
+  width: 50vw;
+  height: 70vh;
+  background: #07a;
+}

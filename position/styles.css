@@ -1,0 +1,61 @@
+body{
+  padding: 100px 0;
+}
+
+.position{
+  border: 1px solid black;
+  position: relative;
+  padding: 20px;
+  width: 300px;
+}
+
+.position .i1{
+  /* reserva espacio y no tiene propiedades de pocisionamiento */
+  position: static;
+  width: 100px;
+  height: 100px;
+  background: #00f;
+}
+
+.position .i2{
+  /* reserva espacio y tiene propiedades de pocisionamiento */
+  position: relative;
+  top: -10px;
+  left: 50px;
+  width: 100px;
+  height: 100px;
+  background: #f00;
+}
+
+.position .i3{
+  /* no reserva espacio y tiene propiedades de pocisionamiento */
+  position: absolute;
+  top: 20px;
+  left: 200px;
+  width: 100px;
+  height: 100px;
+  background: #0f0;
+}
+
+.fixed{
+  /* no reserva espacio y tiene propiedades de pocisionamiento y se queda en el mismo punto sin importar el scroll*/
+  position: fixed;
+  width: 100px;
+  height: 100px;
+  background: #0ff;
+  bottom: 5px;
+  right: 10px;
+}
+
+.sticky{
+  /* reserva espacio y tiene propiedades de pocisionamiento y se queda en el mismo punto especificado sin importar el scroll*/
+  position: sticky;
+  width: 100px;
+  height: 100px;
+  background: #f0f;
+  top: 40px;
+}
+
+p{
+  font-size: 30px;
+}
