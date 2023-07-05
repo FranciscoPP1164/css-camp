@@ -1,0 +1,21 @@
+.imagen{
+  width: 300px;
+  height: 600px;
+  border: 1px solid #000;
+}
+
+.imagen img{
+  width: 100%;
+  height: 100%;
+  /* mantiene la proporcion ocupando em mazimo widh posible */
+  object-fit: contain;
+
+  /* desde la mitad mantiene la proporcion ocupando el maximo heigth posible*/
+  /* object-fit: cover; */
+
+  /* desde la mitad mantiene el tamaño original de la imagen */
+  /* object-fit: none; */
+
+  /* object-fit: scale-down; */
+  object-position: 50% 50%;
+}
